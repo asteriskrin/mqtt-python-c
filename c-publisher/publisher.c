@@ -89,9 +89,9 @@ static void print_and_save_device_data(DeviceData *devices, unsigned num_devices
                 mqtt_publisher(stringConstruct); 
                 sprintf(stringConstruct, "model     : %s\ttype      : %s\tid        : %s\n", devices[i].model, devices[i].type, devices[i].id);
                 mqtt_publisher(stringConstruct);
-                sprintf("wheel     : %d\tPressure  : %d kPa\tTemperature: %d C\n", devices[i].wheel, devices[i].pressure, devices[i].temperature);
+                sprintf(stringConstruct, "wheel     : %d\tPressure  : %d kPa\tTemperature: %d C\n", devices[i].wheel, devices[i].pressure, devices[i].temperature);
                 mqtt_publisher(stringConstruct);
-                sprintf("State?    : %c\tFlags?    : %d\tIntegrity : %s\n", devices[i].state, devices[i].flags, devices[i].integrity);
+                sprintf(stringConstruct, "State?    : %c\tFlags?    : %d\tIntegrity : %s\n", devices[i].state, devices[i].flags, devices[i].integrity);
                 mqtt_publisher(stringConstruct);
 
                 // Tulis ke file
