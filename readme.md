@@ -48,3 +48,7 @@ cd c-publisher
 chmod +x publisher
 ./publisher
 ```
+
+<img width="100%" alt="image" src="https://github.com/asteriskrin/mqtt-python-c/assets/8071604/52a27b77-ebb2-44e4-a574-4383f49dfc2f">
+<img width="100%" alt="image" src="https://github.com/asteriskrin/mqtt-python-c/assets/8071604/f5046a2a-c896-4008-9da0-901a672202b3">
+
